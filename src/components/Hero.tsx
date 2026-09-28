@@ -77,21 +77,10 @@ export function Hero() {
         <h1 className="text-display font-semibold text-paper uppercase select-none">
           <MaskedLine delay={0.25}>Fast, intuitive,</MaskedLine>
           <MaskedLine delay={0.37}>
-            <span className="inline-flex items-center gap-[0.18em]">
-              &amp; responsive
-              <motion.span
-                aria-hidden="true"
-                initial={{ scaleX: 0, opacity: 0 }}
-                animate={{ scaleX: 1, opacity: 1 }}
-                transition={{ duration: 0.9, delay: 0.85, ease: [0.16, 1, 0.3, 1] }}
-                className="hidden h-[0.62em] w-[1.5em] origin-left overflow-hidden rounded-lg md:inline-block"
-              >
-                <img src="/images/work-flux.jpg" alt="" className="size-full object-cover" />
-              </motion.span>
-            </span>
+            &amp; responsive
           </MaskedLine>
           <MaskedLine delay={0.49}>
-            <span className="text-outline">web applications.</span>
+            <span className="text-paper/75">web applications.</span>
           </MaskedLine>
         </h1>
 
@@ -133,7 +122,7 @@ export function Hero() {
         transition={{ delay: 1.4, duration: 0.8 }}
         className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-fog transition-colors duration-150 hover:text-paper sm:flex"
       >
-        <span className="font-mono text-[10px] tracking-[0.2em] uppercase">Scroll</span>
+        <span className="font-mono text-xs tracking-[0.2em] uppercase">Scroll</span>
         <motion.span
           animate={reduce ? {} : { y: [0, 5, 0] }}
           transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}

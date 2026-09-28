@@ -18,7 +18,7 @@ function LivePreview({ project }: { project: Project }) {
           <i className="size-2 rounded-full bg-paper/15" />
           <i className="size-2 rounded-full bg-paper/15" />
         </span>
-        <span className="flex min-w-0 flex-1 items-center gap-1.5 truncate font-mono text-[11px] text-fog">
+        <span className="flex min-w-0 flex-1 items-center gap-1.5 truncate font-mono text-xs text-fog">
           <Globe className="size-3 shrink-0" aria-hidden="true" />
           {project.liveUrl.replace("https://", "").replace("/", "")}
         </span>
@@ -29,7 +29,7 @@ function LivePreview({ project }: { project: Project }) {
       </div>
 
       {/* Live embed */}
-      <div className="relative h-72 overflow-hidden sm:h-80">
+      <div className="relative h-56 overflow-hidden sm:h-64">
         <iframe
           src={project.liveUrl}
           title={project.iframeTitle}
@@ -58,7 +58,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
         <div className="mt-6 flex items-start justify-between gap-6">
           <div className="min-w-0">
-            <p className="font-mono text-xs tracking-[0.14em] text-fog uppercase">
+            <p className="font-mono text-xs tracking-[0.06em] text-fog">
               Project 0{index + 1} — {project.year}
             </p>
             <h3 className="mt-2 text-2xl font-semibold tracking-tight text-paper sm:text-3xl">
@@ -98,9 +98,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 export function Work() {
   return (
     <section id="work" aria-labelledby="work-heading" className="relative scroll-mt-20">
-      <div className="mx-auto max-w-[1400px] px-5 py-24 sm:px-8 sm:py-32">
+      <div className="mx-auto max-w-[1400px] px-5 py-16 sm:px-8 sm:py-24">
         <Reveal>
-          <SectionHeading index="01" title="Featured Projects" className="mb-16 sm:mb-20" />
+          <SectionHeading index="01" title="Featured Projects" className="mb-12 sm:mb-14" />
         </Reveal>
         <h2 id="work-heading" className="sr-only">
           Featured Projects

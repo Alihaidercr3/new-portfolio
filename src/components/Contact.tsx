@@ -113,12 +113,12 @@ function ContactForm() {
         />
       </div>
 
-      <div className="mt-6 flex flex-wrap items-center gap-4">
+      <div className="mt-6 grid gap-4 sm:grid-cols-2">
         <button
           type="submit"
           disabled={busy}
           className={cn(
-            "inline-flex h-11 items-center gap-2 rounded-md px-6 text-md font-medium transition-all duration-150 ease-out active:scale-[0.98]",
+            "inline-flex h-11 w-full items-center justify-center gap-2 rounded-md px-6 text-md font-medium transition-all duration-150 ease-out active:scale-[0.98]",
             "bg-snow text-ink hover:bg-paper disabled:cursor-not-allowed disabled:opacity-60"
           )}
         >

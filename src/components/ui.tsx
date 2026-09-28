@@ -46,7 +46,7 @@ export function SectionHeading({
         <span className="font-mono text-xs tracking-[0.14em] text-fog uppercase">
           /{index}
         </span>
-        <h2 className="text-sm font-medium tracking-[0.14em] text-paper uppercase">
+        <h2 className="text-sm font-medium text-paper">
           {title}
         </h2>
       </div>
@@ -139,7 +139,7 @@ export function ArrowLink({
 /* ── Tag / chip ─────────────────────────────────────────────── */
 export function Tag({ children }: { children: ReactNode }) {
   return (
-    <span className="inline-flex items-center rounded-sm bg-paper/6 px-2.5 py-1 text-xs font-medium text-fog ring-1 ring-paper/8 ring-inset">
+    <span className="inline-flex items-center rounded-sm bg-paper/6 px-2.5 py-1 text-sm font-medium text-fog ring-1 ring-paper/8 ring-inset">
       {children}
     </span>
   );

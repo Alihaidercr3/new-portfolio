@@ -75,7 +75,7 @@ export function Nav() {
 
         {/* Right cluster: role + CTA */}
         <div className="hidden items-center gap-4 lg:flex">
-          <span className="font-mono text-xs tracking-[0.08em] text-fog uppercase">
+          <span className="font-mono text-xs tracking-[0.04em] text-paper/70">
             {profile.role}
           </span>
           <a

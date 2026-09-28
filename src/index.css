@@ -151,12 +151,6 @@
     background-size: 32px 32px;
   }
 
-  /* Text stroke for outlined display type */
-  .text-outline {
-    color: transparent;
-    -webkit-text-stroke: 1px oklch(1 0 0 / 0.32);
-  }
-
   .mask-fade-x {
     mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
   }

@@ -61,7 +61,7 @@ export function Skills() {
                   {group.items.map((item) => (
                     <li
                       key={item}
-                      className="flex items-center gap-2.5 text-md text-fog transition-colors duration-150 group-hover:text-paper/80"
+                      className="flex items-center gap-2.5 text-lg text-fog transition-colors duration-150 group-hover:text-paper/80"
                     >
                       <span
                         aria-hidden="true"
