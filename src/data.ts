@@ -1,4 +1,3 @@
-/* ── Single source of truth — edit these values anytime ── */
 
 export const profile = {
   name: "Ali Haider",

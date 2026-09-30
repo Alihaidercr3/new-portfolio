@@ -62,7 +62,7 @@ export function Hero() {
         >
           <span className="flex items-center gap-1.5 font-mono text-xs tracking-[0.14em] text-fog uppercase">
             <Terminal className="size-3.5" aria-hidden="true" />
-            {profile.name} — Portfolio 2026
+            {profile.name} — Portfolio
           </span>
           <span className="inline-flex items-center gap-2 rounded-md bg-paper/6 py-1.5 pr-3 pl-2.5 text-xs font-medium text-paper ring-1 ring-paper/10 ring-inset">
             <span className="relative flex size-1.5" aria-hidden="true">
